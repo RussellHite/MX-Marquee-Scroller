@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="MarqueeScroller.widget.MarqueeScroller" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>MarqueeScroller</name>
+  <description>The description of this widget.</description>
+
+  <icon></icon>
+
+  <properties>
+      <property key="marqueeTextAttr" type="attribute">
+            <caption>Marquee Text</caption>
+            <category>Data Source</category>
+            <description>The text you want in your marquee </description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="marqueeDirection" type="enumeration" required="true" defaultValue="left">
+            <caption>Marquee Direction</caption>
+            <category>Behavior</category>
+            <description>The direction the message moves.</description>
+            <enumerationValues>
+                <enumerationValue key="left">Left</enumerationValue>
+                <enumerationValue key="right">Right</enumerationValue>
+                <enumerationValue key="up">Up</enumerationValue>
+                <enumerationValue key="down">Down</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="duration" type="integer" required="true" defaultValue="5000">
+            <caption>Marquee Duration</caption>
+            <category>Behavior</category>
+            <description>The time it takes the text to scroll across the banner.</description>
+        </property>
+       <property key="delayBeforeStart" type="integer" required="true" defaultValue="0">
+            <caption>Marquee Delay</caption>
+            <category>Behavior</category>
+            <description>The amount of time before the marquee starts to scroll.</description>
+        </property>
+        <property key="pauseOnHover" type="boolean"  defaultValue="false">
+            <caption>Marquee pause</caption>
+            <category>Behavior</category>
+            <description>The marquee pauses on mouseover.</description>
+        </property>
+	</properties>
+</widget>
+
